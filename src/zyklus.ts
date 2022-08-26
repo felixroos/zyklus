@@ -1,8 +1,8 @@
 AudioContext.prototype['createClock'] = function (
   callback, // called slightly before each cycle
   duration, // duration of each cycle
-  interval = duration, // interval between callbacks
-  overlap = interval / 2, // overlap between callbacks
+  interval = 0.1, // interval between callbacks
+  overlap = 0.1, // overlap between callbacks
 ) {
   let tick = 0; // counts callbacks
   let phase = 0; // next callback time
@@ -37,6 +37,6 @@ AudioContext.prototype['createClock'] = function (
     phase = 0;
     clear();
   };
-
+  // setCallback
   return { setDuration, start, stop, pause, duration };
 };
