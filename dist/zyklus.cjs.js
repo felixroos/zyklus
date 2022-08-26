@@ -1,0 +1,1 @@
+"use strict";AudioContext.prototype.createClock=function(a,e,c=e,o=c/2){let n=0,t=0,l=10**4,h=.01;const k=s=>e=s(e);o=o||c/2;const i=()=>{const s=this.currentTime,I=s+c+o;for(t<s&&(t=s+h);t<I;)t=Math.round(t*l)/l,a(t,e,n++),t+=e};let p;const u=()=>{i(),p=setInterval(i,c*1e3)},r=()=>clearInterval(p);return{setDuration:k,start:u,stop:()=>{n=0,t=0,r()},pause:()=>r(),duration:e}};

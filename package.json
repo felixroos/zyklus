@@ -1,0 +1,32 @@
+{
+  "name": "zyklus",
+  "version": "0.1.0",
+  "description": "Fuzz-Free Web Audio Scheduling",
+  "main": "dist/zyklus.min.js",
+  "scripts": {
+    "build": "vite build",
+    "demo": "vite demo",
+    "pages": "vite build demo && gh-pages -d demo/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixroos/zyklus.git"
+  },
+  "keywords": [
+    "Web",
+    "Audio",
+    "Clock",
+    "Scheduling",
+    "Metronome"
+  ],
+  "author": "Felix Roos <flix91@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixroos/zyklus/issues"
+  },
+  "homepage": "https://github.com/felixroos/zyklus#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "vite": "^3.0.9"
+  }
+}
