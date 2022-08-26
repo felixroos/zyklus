@@ -1,6 +1,6 @@
 {
   "name": "zyklus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fuzz-Free Web Audio Scheduling",
   "main": "dist/zyklus.cjs.js",
   "module": "dist/zyklus.esm.js",
