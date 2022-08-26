@@ -13,10 +13,11 @@ AudioContext.prototype['createClock'] = function (
   const onTick = () => {
     const t = this.currentTime;
     const lookahead = t + interval + overlap; // the time window for this tick
-    if (phase < t) {
-      // skip past callbacks?
-      // phase = Math.ceil(t / duration) * duration;
+    if (phase === 0) {
       phase = t + minLatency;
+    } else if (phase < t) {
+      // skip past callbacks
+      phase = Math.ceil(t / duration) * duration;
     }
     // callback as long as we're inside the lookahead
     while (phase < lookahead) {
