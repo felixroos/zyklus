@@ -2,7 +2,12 @@
   "name": "zyklus",
   "version": "0.1.0",
   "description": "Fuzz-Free Web Audio Scheduling",
-  "main": "dist/zyklus.min.js",
+  "main": "dist/zyklus.cjs.js",
+  "module": "dist/zyklus.esm.js",
+  "exports": {
+    "import": "./dist/zyklus.esm.js",
+    "require": "./dist/zyklus.cjs.js"
+  },
   "scripts": {
     "build": "vite build",
     "demo": "vite demo",
