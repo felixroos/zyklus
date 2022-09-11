@@ -1,6 +1,9 @@
 # Zyklus
 
-Zyklus a small (380 Byte) library to get an accurate Web Audio Clock without hassle. [Demo](https://felixroos.github.io/zyklus/)
+Zyklus a small (380 Byte) library to get an accurate Web Audio Clock without hassle. 
+
+- [Demo](https://felixroos.github.io/zyklus/)
+- [Blog Post](https://loophole-letters.vercel.app/web-audio-scheduling)
 
 ## Installation
 
