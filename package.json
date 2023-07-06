@@ -3,9 +3,9 @@
   "version": "0.1.3",
   "description": "Fuzz-Free Web Audio Scheduling",
   "main": "dist/zyklus.cjs.js",
-  "module": "dist/zyklus.esm.js",
+  "module": "dist/zyklus.es.js",
   "exports": {
-    "import": "./dist/zyklus.esm.js",
+    "import": "./dist/zyklus.es.js",
     "require": "./dist/zyklus.cjs.js"
   },
   "scripts": {
